@@ -1,2 +1,32 @@
 .header
-    background-color: black
+    background-color: #ffffff
+    &-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 40px
+        padding-bottom: 40px
+.form
+    display: flex
+    position: relative
+    overflow: hidden
+    border-radius: 6px
+    height: 40px
+    &__input
+        width: 350px
+        height: 100%
+        padding-left: 23px
+        padding-right: 19%
+        background-color: #F5FAFE
+        border: none
+        color: #333333
+        font-size: 12px
+        line-height: 15px
+    &__button
+        position: absolute
+        top: 0
+        right: 0
+        height: 100%
+        width: 19%
+        border: none
+        background-color: $primary
