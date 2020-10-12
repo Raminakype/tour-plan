@@ -1,10 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
 }
 
@@ -19,11 +19,14 @@ img {
 
 ul {
   max-resolution: 0;
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -73,7 +76,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -111,7 +114,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -259,7 +262,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -294,7 +297,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -378,11 +381,11 @@ template {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -393,7 +396,7 @@ template {
 
 .header-menu {
   width: 100%;
-  background-color: #0a223d;
+  background-color: #0A223D;
 }
 
 .header-menu__list {
@@ -401,8 +404,8 @@ template {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 31px 0;
 }
 
@@ -411,7 +414,7 @@ template {
 }
 
 .header-menu__link {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .logo__img {
@@ -433,7 +436,7 @@ template {
   height: 100%;
   padding-left: 23px;
   padding-right: 19%;
-  background-color: #f5fafe;
+  background-color: #F5FAFE;
   border: none;
   color: #333333;
   font-size: 12px;
@@ -448,7 +451,7 @@ template {
   height: 100%;
   width: 19%;
   border: none;
-  background-color: #ec1f46;
+  background-color: #EC1F46;
 }
 
 .avatar {
@@ -460,8 +463,8 @@ template {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: inherit;
 }
@@ -470,8 +473,32 @@ template {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
+}
+
+.bread-crumps {
+  padding: 18px 0;
+}
+
+.bread-crumps__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bread-crumps__item:not(:last-child):after {
+  content: ' /';
+  margin-right: 4px;
+}
+
+.bread-crumps__item__link {
+  color: #333333;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 @media (max-width: 1200px) {
@@ -511,8 +538,7 @@ template {
   .header-menu {
     display: none;
   }
-  .header-top__form,
-  .header-top__user {
+  .header-top__form, .header-top__user {
     display: none;
   }
   .menu-btn {
@@ -523,14 +549,14 @@ template {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: none;
     cursor: pointer;
     background-color: transparent;
