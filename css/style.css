@@ -6,6 +6,7 @@
 body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -27,6 +28,21 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.button_prime {
+  background: #EC1F46;
+  border-radius: 3px;
+  color: #FFFFFF;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -499,6 +515,66 @@ template {
   color: #333333;
   font-size: 10px;
   line-height: 13px;
+}
+
+.hotel-text {
+  padding: 24px 70px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.hotel-name {
+  margin: 0 23px 0 0;
+}
+
+.hotel-offer {
+  font-size: 10px;
+  padding: 3px 9px 4px 9px;
+}
+
+.hotel-discription {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.hotel-rating {
+  padding: 9px 6px 6px 6px;
+  font-size: 10px;
+  text-align: center;
+  width: 64px;
+  height: 45px;
+}
+
+.hotel-rating__counter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (max-width: 1200px) {
