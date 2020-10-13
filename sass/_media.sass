@@ -29,6 +29,7 @@
         &-menu
             display: none
         &-top
+            padding-top: 28px
             &__form, &__user
                 display: none
     .menu
@@ -46,6 +47,18 @@
                 width: 16px
                 height: 1px
                 background-color: $textColor
+    .hotel-left
+        justify-content: space-between
+        align-items: baseline
+    .stars
+        flex-basis: auto
+    .hotel-name
+        flex-basis: 100%
+    .hotel-offer
+        order: -1
+        margin-bottom: 10px
+    .hotel-rating
+        display: none
 @media (max-width: 576px)
     .container
         width: 92%

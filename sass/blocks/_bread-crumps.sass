@@ -1,5 +1,7 @@
 .bread-crumps
+    background-color: $bgColor
     padding: 18px 0
+    font-size: $btnTextSize
     &__list
         display: flex
         align-items: center
@@ -8,7 +10,6 @@
             &:after
                 content: ' /'
                 margin-right: 4px
-        &__link
-            color: $textColor
-            font-size: 10px
-            line-height: 13px
+    &__link
+        color: $textColor
+        line-height: 13px
