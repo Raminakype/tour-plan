@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -78,7 +83,7 @@
           </ul>
         </div>
       </nav>
-
+</header>
       <div class="bread-crumps">
         <div class="container">
           <ul class="bread-crumps__list">
@@ -134,6 +139,32 @@
         <!-- /.container -->
       </section>
       <!-- /.hotel-text -->
-    </header>
+    <div class="hotel-grid">
+<div class="container">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/Slider/Rectangle 5.jpg" alt="Slide:Beach" class="slider__item"></div>
+              <div class="swiper-slide"><img src="img/Slider/beach2.jpg" alt="Slide:Beach" class="slider__item"></div>
+              <div class="swiper-slide"><img src="img/Slider/beach3.jpg" alt="Slide:Beach" class="slider__item"></div>
+              <div class="swiper-slide"><img src="img/Slider/beach4.jpg" alt="Slide:Beach" class="slider__item"></div>
+              <div class="swiper-slide"><img src="img/Slider/beach5.jpg" alt="Slide:Beach" class="slider__item"></div>
+              <div class="swiper-slide"><img src="img/Slider/beach.jpg" alt="Slide:Beach" class="slider__item"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="slider__button slider__button_prev"></button>
+            <button class="slider__button slider__button_next"></button>
+          </div>
+          <!--./swiper-container-->
+        </div>
+        <!--./Slider-->
+</div>
+    </div>
+    <!--./hotel-grid-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
