@@ -1,14 +1,35 @@
-.hotel-text
-    padding: 25px 0px
-    background-color: $bgColor
-.hotel-info
-    display: flex
-    justify-content: space-between
-    align-items: center
-.hotel-left
-    display: flex
-    flex-wrap: wrap
-    align-items: center
+.hotel
+    &-text
+        padding: 25px 0px
+        background-color: $bgColor
+    &-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-left
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    &-name
+        font-size: 24px
+        margin: 0 14px 0 0
+    &-offer
+        font-size: 10px
+        padding: 3px 9px 4px 9px
+    &-discription
+        flex-basis: 100%
+        font-size: 12px
+    &-rating
+        padding: 9px 6px 6px 6px
+        font-size: 8px
+        text-align: center
+        max-width: 64px
+        min-height: 45px
+        &__counter
+            font-weight: bold
+            font-size: 14px
+            line-height: 18px
+
 .stars
     display: flex
     align-items: center
@@ -16,31 +37,15 @@
     margin-bottom: 5px
     &__item
         margin-right: 2px
-.hotel-name
-    font-size: 24px
-    margin: 0 14px 0 0
-.hotel-offer
-    font-size: 10px
-    padding: 3px 9px 4px 9px
-.hotel-discription
-    flex-basis: 100%
-    font-size: 12px
-.hotel-rating
-    padding: 9px 6px 6px 6px
-    font-size: 8px
-    text-align: center
 
-    max-width: 64px
-    min-height: 45px
-.hotel-rating__counter
-    font-weight: bold
-    font-size: 14px
-    line-height: 18px
 .count
     font-size: 10px
     margin-left: -2px
 .slider
     width: 728px
+    &__item
+        height: 100%
+        width: 100%
     &__button
         position: absolute
         z-index: 10
@@ -79,6 +84,7 @@
     &-grid
         display: flex
         justify-content: space-between
+        margin-bottom: 70px
     &-right
         display: flex
         flex-direction: column

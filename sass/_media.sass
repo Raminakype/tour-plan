@@ -1,7 +1,10 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
-
+    .slider
+        width: 590px
+        &__item
+            object-fit: cover
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -24,6 +27,24 @@
         &__wrapper
             display: flex
             flex-basis: 66.6%
+    .hotel
+        &-grid
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 60px
+        &-right
+            width: 100%
+            flex-direction: row
+            justify-content: space-between
+    .slider
+        width: 100%
+        margin-bottom: 30px
+    .booking
+        width: 340px
+    .map
+        width: 340px
+
 @media (max-width: 768px)
     .container
         max-width: 700px
@@ -52,21 +73,35 @@
                 width: 16px
                 height: 1px
                 background-color: $textColor
-    .hotel-left
-        justify-content: space-between
-        align-items: baseline
+    .hotel
+        &-left
+            justify-content: space-between
+            align-items: baseline
+        &-name
+            flex-basis: 100%
+        &-offer
+            order: -1
+            margin-bottom: 10px
+        &-rating
+            display: none
+        &-right
+            flex-direction: column
     .stars
         flex-basis: auto
-    .hotel-name
-        flex-basis: 100%
-    .hotel-offer
-        order: -1
-        margin-bottom: 10px
-    .hotel-rating
-        display: none
+    .swiper-container
+        height: 350px
+    .booking
+        width: 100%
+        margin-bottom: 20px
+    .map
+        width: 100%
 @media (max-width: 576px)
     .container
         width: 92%
     .logo
         &__img
             width: 99px
+    .swiper-container
+        height: 250px
+    .booking
+        margin-bottom: 20px
