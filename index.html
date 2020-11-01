@@ -139,11 +139,14 @@
         <!-- /.container -->
       </section>
       <!-- /.hotel-text -->
-    <div class="hotel-grid">
-<div class="container">
-        <div class="slider">
+
+
+    <div class="hotel-information">
+      <div class="container">
+        <div class="hotel-grid">
+          <div class="slider">
           <!-- Slider main container -->
-          <div class="swiper-container">
+            <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -158,12 +161,64 @@
             <button class="slider__button slider__button_prev"></button>
             <button class="slider__button slider__button_next"></button>
           </div>
-          <!--./swiper-container-->
+            <!--./swiper-container-->
+          </div>
+          <!--./Slider-->
+          <div class="hotel-right">
+            <div class="booking">
+              <div class="booking__wrapper">
+                <div class="booking__price price">
+                  <div class="price__start">price starts as</div>
+                  <!-- /.price__start -->
+                  <strong class="price__pricetag">$ 8,500</strong>
+                  <!-- /.price__pricetag -->
+                  <div class="price__per-room">per room / night</div>
+                  <!-- /.price__per-room -->
+                </div>
+                <!-- /.booking__price -->
+                <div class="booking__room room">
+                  <div class="room__item">
+                    <img src="img/icons-booking/user.svg" alr="Icon:user" class="room__icon">
+                    <!-- /.room__icon -->
+                    <span class="room__description">2 x Guests</span>
+                    <!-- /.room__description -->
+                  </div>
+                  <div class="room__item">
+                    <img src="img/icons-booking/home.svg" alr="Icon:home" class="room__icon">
+                    <!-- /.room__icon -->
+                    <span class="room__description">1 x Room</span>
+                    <!-- /.room__description -->
+                  </div>
+                  <!-- /.room__item -->
+                </div>
+                <!-- /.booking__room -->
+                <div class="booking__number number">
+                  <span class="number__text">Quick Booking</span>
+                  <a href="tel:12100" class="number__link">
+                    <img src="img/icons-booking/phone-call.svg" alt="" class="number__icon">
+                    <span class="number__num">12100</span>
+                  </a>
+                </div>
+                <!-- /.booking__number -->
+                <buttton class="booking__button button_prime">View Other Options</buttton>
+                <!-- /.booking__button -->
+              </div>
+              <!-- /.booking__wrapper -->
+            </div>
+            <!-- /.booking -->
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d152858.5511278499!2d50.275942400000005!3d53.22833919999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604259192540!5m2!1sru!2sru"
+                width="347" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </div>
+          <!-- /.hotel-right -->
         </div>
-        <!--./Slider-->
-</div>
+        <!--./hotel-grig-->
+      </div>
     </div>
-    <!--./hotel-grid-->
+    <!--./hotel-information-->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
