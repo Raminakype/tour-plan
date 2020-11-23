@@ -1,10 +1,10 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.hotel-slider__container', {
   // Optional parameters
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__button_next',
-    prevEl: '.slider__button_prev',
+    nextEl: '.hotel-slider__button_next',
+    prevEl: '.hotel-slider__button_prev',
   },
   keyboard: {
     enabled: true,
