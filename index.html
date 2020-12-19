@@ -220,22 +220,63 @@
     </div>
     <!--./hotel-information-->
     <section class="news-letter">
-<div class="container">
+      <div class="container">
         <div class="news-letter__wrapper">
-          <h2 class="news-letter__title">subscribe to our
-            <strong class="news-letter__text">Newsletter</strong>
+          <h2 class="news-letter__title section__title">subscribe to our
+            <strong class="news-letter__text section__title_strong">Newsletter</strong>
           </h2>
-        
+              
           <form action="#" class="news-letter__form">
             <input type="text" placeholder="Your email address" class="news-letter__input" />
             <button class="news-letter__button button">Send</button>
           </form>
         </div>
-</div>
+      </div>
       <!-- /.news-letter__wrapper -->
     </section>
     <!-- /.news-letter -->
-  
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title section__title_strong">What people think about us</h2>
+                  <div class="reviews-slider">
+                    <!-- Slider main container -->
+                    <div class="reviews-slider__container">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper reviews-slider__wrapper">
+                        <!-- Slides -->
+                        <div class="reviews-slider__item review__information">
+                          <img src="img/reviews/Megan.jpg" alt="Avatar: Meghan" class="review__avatar">
+                          <div class="review__name">Megan Fox</div>
+                          <div class="review__data">Stayed 18 Nov, 2019</div>
+                          <div class="stars">
+                            <img src="img/Star.svg" class="stars__item" alt="Icon:Star" />
+                            <img src="img/Star.svg" class="stars__item" alt="Icon:Star" />
+                            <img src="img/Star.svg" class="stars__item" alt="Icon:Star" />
+                            <img src="img/Star.svg" class="stars__item" alt="Icon:Star" />
+                            <img src="img/Star.svg" class="stars__item" alt="Icon:Star" />
+                          </div>
+                        </div>
+                        <!--./review__information-->
+                        <div class="review__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us
+                          very well. Issue was only
+                          that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+                          were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+                          atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                          was a good experience and could recommend.</div>
+                        <!-- /.review__text -->
+                      </div>
+                      
+                      <!--./ reviews-slider__wrapper-->
+                      <!-- If we need navigation buttons -->
+                      <button class="reviews-slider__button reviews-slider__button_prev"></button>
+                      <button class="reviews-slider__button reviews-slider__button_next"></button>
+                    </div>
+                    <!--./reviews-slider__container-->
+                  </div>
+                  <!--./reviews-slider-->
+      </div>
+    </section>
+    <!--/.reviews-->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
