@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.hotel-slider__container', {
+var hotelSwiper = new Swiper('.hotel-slider__container', {
   // Optional parameters
   loop: true,
   // Navigation arrows
@@ -10,4 +10,15 @@ var mySwiper = new Swiper('.hotel-slider__container', {
     enabled: true,
     onlyInViewport: false,
   },
+})
+
+var mySwiper = new Swiper('.reviews-container', {
+  // Optional parameters
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button-next',
+    prevEl: '.reviews-slider__button-prev',
+  },
+
 })

@@ -1,4 +1,91 @@
 .reviews
+    &-container
+        overflow: visible
+    &__title
+        text-align: center
+        margin-bottom: 115px
+    &__avatar
+        width: 90px
+        height: 90px
+        border-radius: 100%
+        object-fit: cover
+        position: relative
+        top: -45px
+    &__information
+        width: 537px
+        position: relative
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        text-align: center
+        align-items: center
+        &::before
+            content: ""
+            background-image: url(../img/reviews/quot1.png)
+            display: block
+            background-position: center
+            background-repeat: no-repeat
+            width: 70px
+            height: 48px
+            position: absolute
+            left: 0
+            top: 12px
+        &::after
+            content: ""
+            background-image: url(../img/reviews/quot2.png)
+            display: block
+            background-position: center
+            background-repeat: no-repeat
+            width: 70px
+            height: 48px
+            position: absolute
+            right: 0
+            top: 118px
     &-slider
+        overflow-x: clip
         &__wrapper
+            display: flex
             flex-direction: column
+            align-items: center
+            background-color: #ffffff
+            width: 737px
+            margin: 0 auto
+        &__button
+            position: absolute
+            top: 40%
+            width: 30px
+            height: 30px
+            background-repeat: no-repeat
+            background-position: center
+            border: none
+            background-color: transparent
+            z-index: 10
+            &-prev
+                background-image: url(../img/reviews/Slider/prev.png)
+                left: 0
+            &-next
+                background-image: url(../img/reviews/Slider/next.png)
+                right: 0
+    &__name
+        font-weight: bold
+        align-items: center
+        font-size: 12px
+        line-height: 15px
+        color: $primaryColor
+        margin: 10px 0
+    &__data
+        font-weight: normal
+        font-size: 10px
+        line-height: 13px
+        color: black
+        margin: 0 0 5px 0
+    &__stars
+        margin-top: 5px
+    &__text
+        width: 537px
+        margin: 0 95px 33px 95px
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: justify
+        color: #333333
